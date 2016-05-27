@@ -13,19 +13,34 @@ import android.widget.TextView;
 
 public class CountryDetails extends AppCompatActivity {
 
-    private int getResourceId(String key, String type){
+    /**
+     * Returns the resource id of the requested resource based on the resource key and type of the requested resource
+     *
+     * @param key  : uniq key of the resource whose Id is requested
+     * @param type : type of the resource ( id, style, drawable, string)
+     * @return int : resource id of the requested resource
+     */
+    private int getResourceId(String key, String type) {
         return getResources().getIdentifier(key, type, getPackageName());
     }
 
-    private void updateTheCountryDetails(String country){
+    /**
+     * Renders the details of the country passed into this activity view
+     *
+     * @param country : Name of the country whose details needs to be updated in the activity view
+     */
+    private void updateTheCountryDetails(String country) {
         country = country.toLowerCase();
 
+        // Updates the title with the current selected county name
         setTitle(country.toUpperCase());
 
-        ImageView headImageView = (ImageView) findViewById(R.id.country_details_head_img);
+        // Get and update the head image on the activity with the selected county's head image
+        ImageView headImageView = (ImageView) findViewById(getResourceId("country_details_head_img", "id"));
         headImageView.setBackgroundResource(getResourceId(country, "drawable"));
 
-        for(int i=1; i<=5; i++) {
+        // Update the popular destination image and description of the selected country in the view
+        for (int i = 1; i <= 5; i++) {
             ImageView touristSpotImage = (ImageView) findViewById(getResourceId("country_details_t" + i + "_image", "id"));
             TextView touristSpotDesc = (TextView) findViewById(getResourceId("country_details_t" + i + "_desc", "id"));
             touristSpotImage.setBackgroundResource(getResourceId("t" + i + "_" + country, "drawable"));
@@ -37,16 +52,16 @@ public class CountryDetails extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_country_details);
+
+        //Intent received from the main_activity
         Intent intent = getIntent();
         String countrySelected = intent.getStringExtra("COUNTRY_SELECTED");
-
+        //Update the placeholders on the Country Details layout with the selected country's details
         updateTheCountryDetails(countrySelected);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.menu_country_details, menu);
         return false;
     }
 

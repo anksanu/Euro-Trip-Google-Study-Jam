@@ -27,6 +27,7 @@
         android:layout_marginTop="70dp"
         android:src="@drawable/ico" />
 
+    <!-- Cards List-->
 
     <HorizontalScrollView
         android:layout_width="match_parent"
@@ -40,6 +41,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+
+            <!-- Country Cards-->
 
             <LinearLayout
                 style="@style/CountryCard"
@@ -145,8 +148,12 @@
 
             </LinearLayout>
 
+            <!-- /Country Cards-->
+
         </LinearLayout>
 
     </HorizontalScrollView>
+
+    <!-- /Cards List-->
 
 </RelativeLayout>

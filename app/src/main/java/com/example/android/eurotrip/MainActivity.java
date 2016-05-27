@@ -22,14 +22,17 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.menu_main, menu);
         return false;
     }
 
+    /**
+     * Initates an intent to the country details activity
+     * @param view : Country card that was click by the user showing the intent to view the county details
+     */
     public void countryCardClicked(View view) {
         Intent intent = new Intent(this, CountryDetails.class);
         String tag = (String) view.getTag();
+
         intent.putExtra("COUNTRY_SELECTED",tag);
         startActivity(intent);
 

@@ -24,36 +24,14 @@
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop" />
 
-                <!--<TextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="match_parent"-->
-                    <!--android:text="@string/france"-->
-                    <!--android:textAllCaps="true"-->
-                    <!--android:textColor="#212121"-->
-                    <!--android:textSize="36sp" />-->
-
             </RelativeLayout>
-
-            <!--<TextView-->
-            <!--style="@style/country_details_heading"-->
-            <!--android:text="Currency" ></TextView>-->
-
-            <!--<TextView-->
-            <!--style="@style/country_details_value"-->
-            <!--android:text="$"/>-->
-
-            <!--<TextView-->
-            <!--style="@style/country_details_heading"-->
-            <!--android:text="Airport" ></TextView>-->
-
-            <!--<TextView-->
-            <!--style="@style/country_details_value"-->
-            <!--android:text="IGL"/>-->
 
             <TextView
                 style="@style/country_details_heading"
                 android:paddingBottom="10dp"
                 android:text="Popular Destinations"></TextView>
+
+            <!-- Destination Card-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -126,6 +104,9 @@
                     android:id="@+id/country_details_t5_desc"
                     style="@style/country_details_tour_desc" />
             </LinearLayout>
+
+            <!-- /Destination Card-->
+
         </LinearLayout>
 
     </ScrollView>
