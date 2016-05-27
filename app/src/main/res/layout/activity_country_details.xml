@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.eurotrip.CountryDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/country_details_head_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="@string/france"-->
+                    <!--android:textAllCaps="true"-->
+                    <!--android:textColor="#212121"-->
+                    <!--android:textSize="36sp" />-->
+
+            </RelativeLayout>
+
+            <!--<TextView-->
+            <!--style="@style/country_details_heading"-->
+            <!--android:text="Currency" ></TextView>-->
+
+            <!--<TextView-->
+            <!--style="@style/country_details_value"-->
+            <!--android:text="$"/>-->
+
+            <!--<TextView-->
+            <!--style="@style/country_details_heading"-->
+            <!--android:text="Airport" ></TextView>-->
+
+            <!--<TextView-->
+            <!--style="@style/country_details_value"-->
+            <!--android:text="IGL"/>-->
+
+            <TextView
+                style="@style/country_details_heading"
+                android:paddingBottom="10dp"
+                android:text="Popular Destinations"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/country_details_t1_image"
+                    style="@style/country_details_tour_image" />
+
+                <TextView
+                    android:id="@+id/country_details_t1_desc"
+                    style="@style/country_details_tour_desc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/country_details_t2_desc"
+                    style="@style/country_details_tour_desc" />
+
+                <ImageView
+                    android:id="@+id/country_details_t2_image"
+                    style="@style/country_details_tour_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/country_details_t3_image"
+                    style="@style/country_details_tour_image" />
+
+                <TextView
+                    android:id="@+id/country_details_t3_desc"
+                    style="@style/country_details_tour_desc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/country_details_t4_desc"
+                    style="@style/country_details_tour_desc" />
+
+                <ImageView
+                    android:id="@+id/country_details_t4_image"
+                    style="@style/country_details_tour_image" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/country_details_t5_image"
+                    style="@style/country_details_tour_image" />
+
+                <TextView
+                    android:id="@+id/country_details_t5_desc"
+                    style="@style/country_details_tour_desc" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

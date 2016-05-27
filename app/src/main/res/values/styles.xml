@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CountryCard">
+        <item name="android:layout_width">155dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:onClick">countryCardClicked</item>
+    </style>
+
+    <style name="CountryCardImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="CountryCardText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">#F0F4C3</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+
+    </style>
+
+    <style name="CountyCardSnippet" parent="CountryCardText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">150dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#727272</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingTop">0dp</item>
+
+    </style>
+    
+    <style name="CountryCardBorder">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">#448AFF</item>
+    </style>
+
+</resources>

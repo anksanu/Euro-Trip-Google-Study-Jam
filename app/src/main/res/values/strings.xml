@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Euro Trip</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="france">France</string>
+    <string name="germany">Germany</string>
+    <string name="belgium">Belgium</string>
+    <string name="spain">Spain</string>
+    <string name="italy">Italy</string>
+    <string name="france_snippet">France is famous for the Tour de France and the Eiffel. Symbols such as the Louvre, the Cathedral of Notre Dame, the Latin Quarter, Montmartre make Paris one of the most visited places in the world.</string>
+    <string name="germany_snippet">Germany is widely famous for its\' annual drinking event, Oktoberfest. Oktoberfest is the largest festival in the world during which people gather to enjoy beer, wine and German culture.</string>
+    <string name="belgium_snippet">It is sometimes said that Belgian food is served in the quantity of German cuisine but with the quality of French food. Outside the country, Belgium is best known for its chocolate, waffles, fries and beer.</string>
+    <string name="spain_snippet">Spain is seen as an exotic country because of its friendly people, warm weather, laid-back lifestyle, cuisine, exciting night-life, and its world famous festivities and folk-lore.</string>
+    <string name="italy_snippet">Rome, Italy, is one of the oldest cities in the world and features some of the most famous attractions in all of Europe</string>
+    <string name="main_heading">Backpacking Europe</string>
+    <string name="title_activity_country_details">CountryDetails</string>
+
+</resources>

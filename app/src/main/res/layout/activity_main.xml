@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="#FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingTop="24dp"
+        android:text="@string/main_heading"
+        android:textColor="#455A64"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ico" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/country_card_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/CountryCard"
+                android:tag="@string/germany">
+
+                <ImageView
+                    style="@style/CountryCardImage"
+                    android:src="@drawable/germany" />
+
+                <TextView
+                    style="@style/CountryCardText"
+                    android:text="@string/germany" />
+
+                <TextView
+                    style="@style/CountyCardSnippet"
+                    android:text="@string/germany_snippet" />
+
+                <ImageView style="@style/CountryCardBorder" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/CountryCard"
+                android:tag="@string/france">
+
+                <ImageView
+                    style="@style/CountryCardImage"
+                    android:src="@drawable/france" />
+
+                <TextView
+                    style="@style/CountryCardText"
+                    android:text="@string/france" />
+
+                <TextView
+                    style="@style/CountyCardSnippet"
+                    android:text="@string/france_snippet" />
+
+                <ImageView style="@style/CountryCardBorder" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/CountryCard"
+                android:tag="@string/belgium">
+
+                <ImageView
+                    style="@style/CountryCardImage"
+                    android:src="@drawable/belgium" />
+
+                <TextView
+                    style="@style/CountryCardText"
+                    android:text="@string/belgium" />
+
+                <TextView
+                    style="@style/CountyCardSnippet"
+                    android:text="@string/belgium_snippet" />
+
+                <ImageView style="@style/CountryCardBorder" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/CountryCard"
+                android:tag="@string/spain">
+
+                <ImageView
+                    style="@style/CountryCardImage"
+                    android:src="@drawable/spain" />
+
+                <TextView
+                    style="@style/CountryCardText"
+                    android:text="@string/spain" />
+
+                <TextView
+                    style="@style/CountyCardSnippet"
+                    android:text="@string/spain_snippet" />
+
+                <ImageView style="@style/CountryCardBorder" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/CountryCard"
+                android:tag="@string/italy">
+
+                <ImageView
+                    style="@style/CountryCardImage"
+                    android:src="@drawable/italy" />
+
+                <TextView
+                    style="@style/CountryCardText"
+                    android:text="@string/italy" />
+
+                <TextView
+                    style="@style/CountyCardSnippet"
+                    android:text="@string/italy_snippet" />
+
+                <ImageView style="@style/CountryCardBorder" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>
