@@ -10,6 +10,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,8 +37,17 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CountryDetails.class);
         String tag = (String) view.getTag();
 
-        intent.putExtra("COUNTRY_SELECTED",tag);
+        intent.putExtra("COUNTRY_SELECTED", tag);
         startActivity(intent);
 
+    }
+
+    /**
+     * Initates an intent to the europe details activity
+     * @param view : Country card that was click by the user showing the intent to view the county details
+     */
+    public void openEuroDescription (View view){
+        Intent intent = new Intent(this, EuroDescription.class);
+        startActivity(intent);
     }
 }

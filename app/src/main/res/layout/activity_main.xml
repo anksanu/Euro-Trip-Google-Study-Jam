@@ -21,6 +21,8 @@
         android:textSize="24sp" />
 
     <ImageView
+        android:id="@+id/main_head_image"
+        android:onClick="openEuroDescription"
         android:layout_width="128dp"
         android:layout_height="128dp"
         android:layout_centerHorizontal="true"

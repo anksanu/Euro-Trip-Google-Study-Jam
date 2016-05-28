@@ -15,5 +15,6 @@
     <string name="italy_snippet">Rome, Italy, is one of the oldest cities in the world and features some of the most famous attractions in all of Europe</string>
     <string name="main_heading">Backpacking Europe</string>
     <string name="title_activity_country_details">CountryDetails</string>
+    <string name="title_activity_euro_description">EuroDescription</string>
 
 </resources>

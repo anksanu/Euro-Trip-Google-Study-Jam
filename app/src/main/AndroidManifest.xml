@@ -20,6 +20,10 @@
             android:name=".CountryDetails"
             android:label="@string/title_activity_country_details" >
         </activity>
+        <activity
+            android:name=".EuroDescription"
+            android:label="@string/title_activity_euro_description" >
+        </activity>
     </application>
 
 </manifest>
