@@ -38,12 +38,14 @@ public class CountryDetails extends AppCompatActivity {
         // Get and update the head image on the activity with the selected county's head image
         ImageView headImageView = (ImageView) findViewById(getResourceId("country_details_head_img", "id"));
         headImageView.setBackgroundResource(getResourceId(country, "drawable"));
+//        headImageView.setBackgroundResource(getResourceId("travel_icon", "drawable"));
 
         // Update the popular destination image and description of the selected country in the view
         for (int i = 1; i <= 5; i++) {
             ImageView touristSpotImage = (ImageView) findViewById(getResourceId("country_details_t" + i + "_image", "id"));
             TextView touristSpotDesc = (TextView) findViewById(getResourceId("country_details_t" + i + "_desc", "id"));
             touristSpotImage.setBackgroundResource(getResourceId("t" + i + "_" + country, "drawable"));
+//            touristSpotImage.setBackgroundResource(getResourceId("travel_icon", "drawable"));
             touristSpotDesc.setText(getResourceId(country + "_t" + i + "_description", "string"));
         }
     }

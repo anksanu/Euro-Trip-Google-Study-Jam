@@ -50,7 +50,7 @@
 
                 <ImageView
                     style="@style/CountryCardImage"
-                    android:src="@drawable/germany" />
+                    android:src="@drawable/germany_head" />
 
                 <TextView
                     style="@style/CountryCardText"
@@ -71,7 +71,7 @@
 
                 <ImageView
                     style="@style/CountryCardImage"
-                    android:src="@drawable/france" />
+                    android:src="@drawable/france_head" />
 
                 <TextView
                     style="@style/CountryCardText"
@@ -91,7 +91,7 @@
 
                 <ImageView
                     style="@style/CountryCardImage"
-                    android:src="@drawable/belgium" />
+                    android:src="@drawable/belgium_head" />
 
                 <TextView
                     style="@style/CountryCardText"
@@ -112,7 +112,7 @@
 
                 <ImageView
                     style="@style/CountryCardImage"
-                    android:src="@drawable/spain" />
+                    android:src="@drawable/spain_head" />
 
                 <TextView
                     style="@style/CountryCardText"
@@ -133,7 +133,7 @@
 
                 <ImageView
                     style="@style/CountryCardImage"
-                    android:src="@drawable/italy" />
+                    android:src="@drawable/italy_head" />
 
                 <TextView
                     style="@style/CountryCardText"
